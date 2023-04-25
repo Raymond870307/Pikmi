@@ -66,9 +66,10 @@ header{
 	justify-content: space-between;
 	border: red solid 1px;
 }
-.logo{
+.nav_logo{
 	max-width: 100%;
 	border: red solid 1px;
+	background-image:url(https://i.imgur.com/4ndjo3V.png);
 }
 
 .right01{
@@ -82,12 +83,7 @@ li{
 	border: red solid 1px;
 }
 
-.section001{
-	display: flex;
-	max-width: 1200px;
-	margin: 0 auto;
-	border: red solid 1px;
-}
+
 h1{
 	font-size: 72px;
 	font-weight: 900;
@@ -97,16 +93,4 @@ h2{
 	line-height: 2.4em;
 	border: red solid 1px;
 	font-size: 24px;
-}
-.pic01{
-	border: red solid 1px;
-	max-width: 100%;
-}
-.container{
-	/* display: flex; */
-	display: flex;
-	flex-direction: column-reverse;
-	/* align-items: center; */
-	line-height:4.8em;
-	max-width: 600px;
 }
