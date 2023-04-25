@@ -60,26 +60,41 @@ html{
 	}
 
 header{
+	background-color: #E6E6E6;
+	margin: 0 auto;
+
+	
+}
+.nav{
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	border: red solid 1px;
+	/* position: fixed; */
+	
 }
 .nav_logo{
-	max-width: 100%;
 	border: red solid 1px;
-	background-image:url(https://i.imgur.com/4ndjo3V.png);
+	background-image: url(https://github.com/Raymond870307/Pikmi/blob/master/png/logo.png?raw=true);
+	background-repeat: no-repeat;
+	object-fit: contain;
+	width: 241px;
+	height: 54px;
+	margin: 10px;
+}
+.nav_section{
+	display: flex;
 }
 
-.right01{
+.nav_items{
 	display: flex;
-	padding: 30px;
+	padding: 12px;
 	border: red solid 1px;
 	align-items: center;
 }
 li{
 	margin-right:30px;
+	color:#262626 ;
 	border: red solid 1px;
 }
 
@@ -93,4 +108,28 @@ h2{
 	line-height: 2.4em;
 	border: red solid 1px;
 	font-size: 24px;
+}
+
+.primary{
+	background-color: #6B76FF;
+	color: white;
+}
+.btn_small{
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-radius: 6px;
+}
+
+.swiper{
+	background-image: url(https://github.com/Raymond870307/Pikmi/blob/master/png/pic01.png?raw=true);
+	background-repeat: no-repeat;
+	height: 930px;
+	width:1440px;
+}
+.top_section{
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
 }
