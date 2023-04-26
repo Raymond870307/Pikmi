@@ -64,8 +64,6 @@ html{
 header{
 	background-color: #E6E6E6;
 	margin: 0 auto;
-
-	
 }
 .nav{
 	max-width: 1200px;
@@ -102,14 +100,16 @@ li{
 
 
 h1{
-	font-size: 72px;
+	font-size: 60px;
 	font-weight: 900;
 	border: red solid 1px;
+	color: #424242;
 }
 h2{
-	line-height: 2.4em;
+	line-height: 1.8em;
 	border: red solid 1px;
-	font-size: 24px;
+	font-size: 18px;
+	color: #858585;
 }
 
 .primary{
@@ -159,6 +159,38 @@ a{
 	background-position: center center;
 	background-size: cover;
   }
-  .flex{
+
+  .intro-section{
+	max-width: 1200px;
+	margin: 0 auto;
 	display: flex;
   }
+  .intro-flex{
+	display: flex;
+	border: #6B76FF solid 1px;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+  }
+  .intro-left{
+	width: 598px;
+	padding-top: 120px;
+	justify-content: center; /* 水平置中 */
+	align-items: center; /* 垂直置中 */
+
+  }
+.app-introduce{
+	background-image: url(https://github.com/Raymond870307/Pikmi/blob/master/png/app.png?raw=true);
+	background-repeat: no-repeat;
+	border: rgb(255, 0, 0) solid 1px;
+	width: 481px;
+	height: 504px;
+}
+.right-side{
+	float:left;
+}
+.margin-d{
+	margin-top: 16px;
+}
+.primary a{
+	color: white;
+}
