@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/all.css">
+    <script src="js/all.js"></script>
+<!-- 引入 Swiper CSS 文件 -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- 引入 Swiper JS 文件 -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -14,19 +21,29 @@
         </div>
         <ul class="nav_items">
             <li>
+                <a href="#">
                 關於我們
+                 </a>
             </li>
             <li>
+                <a href="#">
                 app介紹
+                </a>
             </li>
             <li>
+                <a href="#">
                核心價值
+            </a>
             </li>
             <li>
+                <a href="#">
                 近期活動
+            </a>
             </li>
             <li>
+                <a href="#">
                 聯絡我們
+               </a>
             </li>
             <li class="primary btn_small">
                 成為平台攝影師
@@ -34,8 +51,19 @@
               </ul>
     </nav>
     </header>
-    <div class="top_section swiper">
     
-    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic3.png?raw=true');"></div>
+          <div class="swiper-slide" style="background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic01.png?raw=true');"></div>
+          <div class="swiper-slide" style="background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic2.png?raw=true');"></div>
+        </div>
+        <!-- 如果需要導航按鈕 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- 如果需要分頁器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+      
 </body>
 </html>
