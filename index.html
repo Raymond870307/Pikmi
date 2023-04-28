@@ -9,11 +9,15 @@
     <script src="js/all.js"></script>
     <!-- browser icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- jquery文件 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- 引入 Swiper CSS 文件 -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css"
+/> -->
 
-<!-- 引入 Swiper JS 文件 -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- 思源黑體cdn -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
 </head>
@@ -98,5 +102,33 @@
     <div class="BG-container">
 
     </div>
+<!-- 引入 Swiper JS 文件 -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"></script> -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    $(document).ready(function() {
+  var mySwiper = new Swiper('.swiper-container', {
+    // Swiper相關配置
+  });
+});
+
+console.log(Swiper); // 如果成功引入，會在 console 中顯示 Swiper 函式的內容
+
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    autoplay: {
+      delay: 1200,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    loop: true // 加入 loop 選項
+  });
+  
+</script>
 </body>
 </html>
