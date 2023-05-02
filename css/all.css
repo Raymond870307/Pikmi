@@ -60,19 +60,33 @@ html{
 *,*::before,*::after{
 	box-sizing:border-box;
 	}
+/* bg底圖 */
+.bg-png001{
+	position: absolute;
+	z-index: 999;
+	width: 100%;;
+	background-image: url(https://github.com/Raymond870307/Pikmi/blob/master/png/LOGO-BG01.png?raw=true);
+}
+
+
+
+
+
 
 header{
-	background-color: #E6E6E6;
-	margin: 0 auto;
+
 }
-.nav{
-	max-width: 1200px;
+.navbar{
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	/* position: fixed; */
+	position: fixed;
+	z-index: 99;
+	border: red solid 1px;
 	
 }
+
 .nav_logo{
 	border: red solid 1px;
 	background-image: url(https://github.com/Raymond870307/Pikmi/blob/master/png/logo.png?raw=true);
@@ -82,32 +96,35 @@ header{
 	height: 54px;
 	margin: 10px;
 }
-.nav_section{
+.nav-section{
 	display: flex;
+	background-color: rgba(255, 255, 255, 0.2); 
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav_items{
 	display: flex;
 	padding: 12px;
-	border: red solid 1px;
+	/* border: red solid 1px; */
 	align-items: center;
 }
 li{
 	margin-right:30px;
 	color:#262626 ;
-	border: red solid 1px;
+	/* border: red solid 1px; */
 }
 
 
 h1{
 	font-size: 60px;
 	font-weight: 900;
-	border: red solid 1px;
+	/* border: red solid 1px; */
 	color: #424242;
+	line-height:  1.4em;;
 }
 h2{
 	line-height: 1.8em;
-	border: red solid 1px;
+	/* border: red solid 1px; */
 	font-size: 18px;
 	color: #858585;
 }
@@ -129,7 +146,7 @@ h2{
 	background-repeat: no-repeat;
 	height: 930px;
 	width:1440px;
-	border: rgb(255, 0, 0) solid 1px;
+	/* border: rgb(255, 0, 0) solid 1px; */
 }
 #header-slider {
 	overflow: hidden;
@@ -166,7 +183,7 @@ a{
 	display: flex;
   }
   .intro-flex{
-	border: #6B76FF solid 5px;
+	/* border: #6B76FF solid 5px; */
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	margin-top:40px;
@@ -183,7 +200,7 @@ a{
 .app-introduce{
 	background-image: url(https://github.com/Raymond870307/Pikmi/blob/master/png/app.png?raw=true);
 	background-repeat: no-repeat;
-	border: rgb(255, 0, 0) solid 1px;
+	/* border: rgb(255, 0, 0) solid 1px; */
 	width: 481px;
 	height: 504px;
 }
