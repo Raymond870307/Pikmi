@@ -213,9 +213,36 @@ a{
 .primary a{
 	color: white;
 }
-.BG-container{
+.vison-section{
 	width: 100%;
 	height: 100vh;
 	background-image:url(https://github.com/Raymond870307/Pikmi/blob/master/png/BG.png?raw=true) ;
 	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
+
+.abc{
+	margin: 0;
+}
+
+.swiper-container2 {
+    width: 100%;
+    height: 100%;
+	overflow: hidden;
+  }
+  .swiper-slide {
+    background-image: url('背景圖片的 URL');
+    background-size: cover;
+    background-position: center;
+  }
+  .slide-content {
+    width:800px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
