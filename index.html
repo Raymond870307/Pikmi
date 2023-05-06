@@ -20,11 +20,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
 </head>
 <body>
+    <!-- header底圖 -->
+  <div class="img bg-png001">
+  </div>
+
     <header>
-        <!-- header底圖 -->
-        <div class="img bg-png001">
-        </div>
-    <nav class="navbar nav-section">
+      <nav class="navbar nav-section">
         <div class="nav_logo">
         </div>
         <ul class="nav_items">
@@ -57,7 +58,7 @@
                 <a href="#">成為平台攝影師</a>
             </li>
               </ul>
-    </nav>
+       </nav>
     </header>
 
     <div class="swiper-container">
@@ -93,45 +94,55 @@
             <div class="primary btn_small right-side margin-d">
                 <a href="#">搶先試用體驗</a>
               </div>
-              
         </div>
        
 
       </div>
     </div>
 <!-- 第三part -->
-    <div class="vison-section">
-      <div class="swiper-container2">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slide-content">
-              <h1>第一個投影片</h1>
-              <p>這是第一個投影片的內容。</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide-content">
-              <h1>第二個投影片</h1>
-              <p>這是第二個投影片的內容。</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide-content">
-              <h1>第三個投影片</h1>
-              <p>這是第三個投影片的內容。</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide-content">
-              <h1>第四個投影片</h1>
-              <p>這是第四個投影片的內容。</p>
-            </div>
-          </div>
+<div class="vison-section">
+  <div class="swiper-container100">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <h1>第一個投影片</h1>
+          <p>這是第一個投影片的內容。</p>
         </div>
-        <!-- 分頁 -->
-        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <h1>第二個投影片</h1>
+          <p>這是第二個投影片的內容。</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <h1>第三個投影片</h1>
+          <p>這是第三個投影片的內容。</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <h1>第四個投影片</h1>
+          <p>這是第四個投影片的內容。</p>
+        </div>
       </div>
     </div>
+    <!-- 分頁 -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper('.swiper-container100', {
+      loop: true,
+      effect: 'slide',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
       <!-- 引入 Swiper JS 文件 -->
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script>
