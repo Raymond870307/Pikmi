@@ -120,7 +120,7 @@ h1{
 	font-weight: 900;
 	/* border: red solid 1px; */
 	color: #424242;
-	line-height:  1.4em;;
+	line-height:  1.2em;;
 }
 h2{
 	line-height: 1.8em;
@@ -229,15 +229,38 @@ a{
 	overflow: hidden;
   }
   .swiper-slide {
-    background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic01.png?raw=true');
+	/* 這邊下的圖片是透明png */
+    background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/transparent.png?raw=true');
     background-size: cover;
     background-position: center;
   }
-  .swiper-slide01{
+  .swiper-slide-png01{
     background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/container01.png?raw=true/Pikmi/blob/master/png/pic01.png?raw=true');
 	background-repeat: no-repeat;
     background-position: center; 
 	height: 100%;
+	border-radius:60px;	
+  }
+  .swiper-slide-png02{
+    background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/container02.png?raw=true');
+	background-repeat: no-repeat;
+    background-position: center; 
+	height: 100%;
+	border-radius:60px !important ;
+  }
+  .swiper-slide-png03{
+    background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/container03.png?raw=true');
+	background-repeat: no-repeat;
+    background-position: center; 
+	height: 100%;
+	border-radius:60px;	
+  }
+  .swiper-slide-png04{
+    background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/container04.png?raw=true');
+	background-repeat: no-repeat;
+    background-position: center; 
+	height: 100%;
+	border-radius:60px;	
   }
   .slide-content {
     width:800px;
@@ -247,4 +270,23 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .white-font{
+	color: white;
+  }
+  .big-size{
+	font-size: 128px;
+  }
+  .divide{
+	width: 100px;
+	height: 16px;
+	border-radius: 6px;
+	background-color:#FFD731;
+  }
+  .small-margin{
+	margin-top: 12px;
+	margin-bottom: 12px;
+  }
+  .text-middle{
+	text-align: center;
   }
