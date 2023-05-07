@@ -160,7 +160,6 @@ a{
 	text-decoration: none;
 	color: black;
 }
-
 .swiper-container {
 	position: relative;
 	width: 100%;
@@ -223,9 +222,6 @@ a{
 	background-size: cover;
 }
 
-.abc{
-	margin: 0;
-}
 
 .swiper-container2 {
     width: 100%;
@@ -233,9 +229,9 @@ a{
 	overflow: hidden;
   }
   .swiper-slide {
-    background-image: url('背景圖片的 URL');
-    background-size: cover;
-    background-position: center;
+    background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic01.png?raw=true');
+    /* background-size: cover;
+    background-position: center; */
   }
   .slide-content {
     width:800px;
