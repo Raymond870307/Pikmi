@@ -230,8 +230,14 @@ a{
   }
   .swiper-slide {
     background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic01.png?raw=true');
-    /* background-size: cover;
-    background-position: center; */
+    background-size: cover;
+    background-position: center;
+  }
+  .swiper-slide01{
+    background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/container01.png?raw=true/Pikmi/blob/master/png/pic01.png?raw=true');
+	background-repeat: no-repeat;
+    background-position: center; 
+	height: 100%;
   }
   .slide-content {
     width:800px;
