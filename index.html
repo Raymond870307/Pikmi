@@ -85,11 +85,7 @@
             </div>
             <div class="margin-d">
                 <h2>
-                 Pikmi為您提供方
-                 便又快速的攝影服務
-                 ，您可以在任何地點
-                 以喜愛的風格尋找那位
-                 能夠幫您記錄下美好回憶的專業攝影師。
+                 Pikmi為您提供方便又快速的攝影服務，您可以在任何地點以喜愛的風格尋找那位能夠幫您記錄下美好回憶的專業攝影師。
                 </h2>
             <div class="primary btn_small right-side margin-d">
                 <a href="#">搶先試用體驗</a>
@@ -100,9 +96,10 @@
       </div>
     </div>
 <!-- 第三part -->
-<div class="vison-section">
+<div class="vision-section">
   <div class="swiper-container2">
     <div class="swiper-wrapper">
+      
       <div class="swiper-slide">
       <div class="swiper-slide-png01">
         <div class="slide-content">
@@ -112,7 +109,7 @@
           <p class="white-font">還在擔心人生高光沒被記錄到?</p>
         </div>
       </div>
-    </div>
+     </div>
       <div class="swiper-slide">
         <div class="swiper-slide-png02">
           <div class="slide-content">
@@ -144,22 +141,35 @@
         </div>
       </div>
     </div>
+     <!-- 如果需要導航按鈕 -->
+    <div class="swiper-button-next2"></div>
+    <div class="swiper-button-prev2"></div>
     <!-- 分頁 -->
     <!-- <div class="swiper-pagination"></div> -->
   </div>
 </div>
+  <!-- 第二部分swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
   <script>
     var swiper = new Swiper('.swiper-container2', {
       loop: true,
       effect: 'slide',
+      autoplay: {
+          delay: 3600,
+        },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+          nextEl: '.swiper-button-next2',
+          prevEl: '.swiper-button-prev2',
+        },
     });
   </script>
+  
+  <!-- 第一部分swiper -->
       <!-- 引入 Swiper JS 文件 -->
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script>
