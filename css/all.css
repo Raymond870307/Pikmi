@@ -107,11 +107,14 @@ html{
 	padding: 12px;
 	/* border: red solid 1px; */
 	align-items: center;
+	text-align:center;
+	margin-right: 200px;
 }
 li{
-	margin-right:30px;
+	margin-right:12px;
 	color:#262626 ;
 	/* border: red solid 1px; */
+	text-align:center;
 }
 
 
@@ -133,11 +136,14 @@ h2{
 	background-color: #6B76FF;
 	color: white;
 }
+.primary:hover{
+	background-color: #325DE0;
+}
 .btn_small{
 	padding-right: 20px;
 	padding-left: 20px;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	border-radius: 6px;
 }
 
@@ -209,6 +215,9 @@ a{
 }
 .margin-d{
 	margin-top: 16px;
+}
+.margin-small{
+	margin-left: 36px;
 }
 .primary a{
 	color: white;
@@ -303,4 +312,15 @@ a{
   }
   .swiper-pagination-bullet-active {
     opacity: 1;
+  }
+  .btn-hover{
+	padding:12px 20px;
+  }
+  .btn-hover:hover{
+    background-color: #FFD731;
+    border-radius: 12px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+	transition: background-color 0.5s;
   }
