@@ -392,3 +392,15 @@ a{
 	background-position: center center;
 	background-size: cover;
   }
+  .container{
+	display: flex;
+  	justify-content: center; /* 水平置中 */
+  	align-items: center; /* 垂直置中 */
+  }
+  .box-middle {
+	display: flex;
+	flex-direction: column; /* 設置為列 */
+	align-items: center; /* 水平置中內容 */
+	gap: 10px; /* 設置列間距 */
+  }
+
