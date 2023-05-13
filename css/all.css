@@ -242,6 +242,9 @@ a{
 .margin-c{
 	margin-top: 32px;
 }
+.margin-a{
+	margin-top: 256px;
+}
 .margin-small{
 	margin-left: 36px;
 }
@@ -378,4 +381,14 @@ a{
   }
   .font-black{
 	color: black;
+  }
+  .footer{
+	max-width: 100%;
+	height: auto;
+	width: 1920px;
+	height: 281px;
+	background-image:url(https://github.com/Raymond870307/Pikmi/blob/master/png/Footer.png?raw=true) ;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
   }
