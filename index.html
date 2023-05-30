@@ -23,9 +23,10 @@
     <!-- header底圖 -->
   <div class="img bg-png001">
   </div>
-
+<!-- 第一part -->
     <header>
-      <nav class="navbar nav-section">
+       <!-- 0530前navbar無rwd  -->
+      <!-- <nav class="navbar nav-section">
       
           <a class="nav_logo" href="https://project.pikmi.app/"></a>
        
@@ -58,10 +59,30 @@
             <li>
                 <a class="primary btn_small margin-small" href="#">成為平台攝影師</a>
             </li>
-              </ul>
-       </nav>
+              </ul> -->
+        <!-- 0530測試 -->
+       <nav class="navbar">
+        <div class="logo">
+          <a href="#"><img src="https://github.com/Raymond870307/Pikmi/blob/master/png/logo.png?raw=true" alt="Logo"></a>
+        </div>
+        <div class="menu">
+          <a href="#" class="menu-item">關於我們</a>
+          <a href="#" class="menu-item">app介紹</a>
+          <a href="#" class="menu-item">核心價值</a>
+          <a href="https://project.pikmi.app/campaign" class="menu-item">近期活動</a>
+          <a href="https://project.pikmi.app/contectme" class="menu-item">聯絡我們</a>
+          <a href="#" class="menu-item primary btn_small">成為平台攝影師</a>
+        </div>
+        <div class="hamburger">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+      </nav>
+      <!-- 0530測試 -->
+       
     </header>
-
+<!-- 第二part -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide" style="background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic3.png?raw=true');"></div>
@@ -74,9 +95,10 @@
         <!-- 如果需要分頁器 -->
         <div class="swiper-pagination"></div>
       </div>
-
-      <div class="intro-section intro-flex">
+<!-- 2-2 part -->
+      <!-- <div class="intro-section intro-flex">
         <div class="app-introduce">
+          <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/app.png?raw=true" alt="">
         </div>
         <div class="intro-left">
             <div class="margin-d">
@@ -88,12 +110,34 @@
                 <h3>
                  Pikmi為您提供方便又快速的攝影服務，您可以在任何地點以喜愛的風格尋找那位能夠幫您記錄下美好回憶的專業攝影師。
                 </h3>
-            <div class="primary btn_small right-side margin-d">
+            <div class="primary btn_small left-side">
                 <a href="#">搶先試用體驗</a>
               </div>
         </div>
       </div>
+    </div> -->
+    <!-- 0530新增 -->
+    <div class="intro-section">
+      <div class="app-introduce">
+        <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/app.png?raw=true" alt="">
+      </div>
+      <div class="intro-left">
+        <div class="margin-d">
+          <h1>
+            游牧攝影<br>捕捉您的高光時刻<br>
+          </h1>
+        </div>
+        <div class="margin-d">
+          <h3>
+            Pikmi為您提供方便又快速的攝影服務，您可以在任何地點以喜愛的風格尋找那位能夠幫您記錄下美好回憶的專業攝影師。
+          </h3>
+        </div>
+        <div class="primary btn_small margin-small">
+          <a href="#">搶先試用體驗</a>
+        </div>
+      </div>
     </div>
+    
 <!-- 第三part -->
 <div class="vision-section">
   <div class="swiper-container2">
@@ -227,6 +271,16 @@
           el: '.swiper-pagination',
         },
         loop: true // 加入 loop 選項
+      });
+      
+      </script>
+      <script>
+                // JavaScript 程式碼
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
+      
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('active');
       });
       
       </script>
