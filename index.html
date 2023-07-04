@@ -1,288 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pikmi攝影媒合平台</title>
-    <link rel="stylesheet" href="css/all.css">
-    <script src="js/all.js"></script>
-    <!-- browser icon -->
-    <link rel="shortcut icon" href="favicon" type="image/x-icon">
-<!-- 引入 Swiper CSS 文件 -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<!-- <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css"
-/> -->
 
-<!-- 思源黑體cdn -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pikmi攝影媒合平台</title>
+  <link rel="stylesheet" href="../css/all_index.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <script src="../js/index.js"></script>
+
+  
+
+  <!-- browser icon -->
+  <link rel="shortcut icon" href="favicon" type="image/x-icon">
+  <!-- 引入 Swiper CSS 文件 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+
+  <!-- 思源黑體cdn -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap">
 </head>
+
 <body>
-    <!-- header底圖 -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- header底圖 -->
   <div class="img bg-png001">
   </div>
-<!-- 第一part -->
-    <header>
-       <!-- 0530前navbar無rwd  -->
-      <!-- <nav class="navbar nav-section">
-      
-          <a class="nav_logo" href="https://project.pikmi.app/"></a>
-       
-        <ul class="nav_items">
-            <li>
-                <a class="btn-hover" href="https://project.pikmi.app/aboutme">
-                關於我們
-                 </a>
-            </li>
-            <li>
-                <a class="btn-hover" href="#">
-                app介紹
-                </a>
-            </li>
-            <li>
-                <a class="btn-hover" href="#">
-               核心價值
-            </a>
-            </li>
-            <li>
-                <a class="btn-hover" href="https://project.pikmi.app/campaign">
-                近期活動
-            </a>
-            </li>
-            <li>
-                <a class="btn-hover" href="https://project.pikmi.app/contectme">
-                聯絡我們
-               </a>
-            </li>
-            <li>
-                <a class="primary btn_small margin-small" href="#">成為平台攝影師</a>
-            </li>
-              </ul> -->
-        <!-- 0530測試 -->
-       <nav class="navbar">
-        <div class="logo">
-          <a href="#"><img src="https://github.com/Raymond870307/Pikmi/blob/master/png/logo.png?raw=true" alt="Logo"></a>
-        </div>
-        <div class="menu">
-          <a href="#" class="menu-item">關於我們</a>
-          <a href="#" class="menu-item">app介紹</a>
-          <a href="#" class="menu-item">核心價值</a>
-          <a href="https://project.pikmi.app/campaign" class="menu-item">近期活動</a>
-          <a href="https://project.pikmi.app/contectme" class="menu-item">聯絡我們</a>
-          <a href="#" class="menu-item primary btn_small">成為平台攝影師</a>
-        </div>
-        <div class="hamburger">
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-        </div>
-      </nav>
-      <!-- 0530測試 -->
-       
-    </header>
-<!-- 第二part -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic3.png?raw=true');"></div>
-          <div class="swiper-slide" style="background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic01.png?raw=true');"></div>
-          <div class="swiper-slide" style="background-image: url('https://github.com/Raymond870307/Pikmi/blob/master/png/pic2.png?raw=true');"></div>
-        </div>
-        <!-- 如果需要導航按鈕 -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- 如果需要分頁器 -->
-        <div class="swiper-pagination"></div>
+  <!-- 導覽列 -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="https://github.com/Raymond870307/Pikmi/blob/master/png/logo.png?raw=true" alt="Logo"></a>
       </div>
-<!-- 2-2 part -->
-      <!-- <div class="intro-section intro-flex">
-        <div class="app-introduce">
-          <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/app.png?raw=true" alt="">
-        </div>
-        <div class="intro-left">
-            <div class="margin-d">
-                <h1>
-                游牧攝影<br>捕捉您的高光時刻<br>
-                </h1>
-            </div>
-            <div class="margin-d">
-                <h3>
-                 Pikmi為您提供方便又快速的攝影服務，您可以在任何地點以喜愛的風格尋找那位能夠幫您記錄下美好回憶的專業攝影師。
-                </h3>
-            <div class="primary btn_small left-side">
-                <a href="#">搶先試用體驗</a>
-              </div>
-        </div>
+      <div class="menu">
+        <a href="#" class="menu-item">關於我們</a>
+        <a href="#" class="menu-item">app介紹</a>
+        <a href="#" class="menu-item">核心價值</a>
+        <a href="https://project.pikmi.app/campaign" class="menu-item">近期活動</a>
+        <a href="https://project.pikmi.app/contectme" class="menu-item">聯絡我們</a>
+        <a href="#" class=" menu-item_btn">成為平台攝影師</a>
       </div>
-    </div> -->
-    <!-- 0530新增 -->
-    <div class="intro-section">
-      <div class="app-introduce">
-        <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/app.png?raw=true" alt="">
+      <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
       </div>
-      <div class="intro-left">
-        <div class="margin-d">
-          <h1>
-            游牧攝影<br>捕捉您的高光時刻<br>
-          </h1>
-        </div>
-        <div class="margin-d">
-          <h3>
-            Pikmi為您提供方便又快速的攝影服務，您可以在任何地點以喜愛的風格尋找那位能夠幫您記錄下美好回憶的專業攝影師。
-          </h3>
-        </div>
-        <div class="primary btn_small margin-small">
-          <a href="#">搶先試用體驗</a>
-        </div>
+    </nav>
+
+  </header>
+  <!-- 輪播圖 -->
+  <div class="swiper-container" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('../png/pic01.png');"></div>
+      <div class="swiper-slide" style="background-image: url('../png/pic2.png');"></div>
+      <div class="swiper-slide" style="background-image: url('../png/pic3.png');"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- 介紹＋手機 -->
+  <div class="intro-section" data-aos="fade-up" data-aos-duration="3000">
+    <div class="intro-left">
+      <div class="margin-d">
+        <h1>
+          游牧攝影<br>捕捉您的高光時刻<br>
+        </h1>
+      </div>
+      <div class="margin-d">
+        <h3>
+          Pikmi為您提供方便又快速的攝影服務，您可以在任何地點以喜愛的風格尋找那位能夠幫您記錄下美好回憶的專業攝影師。
+        </h3>
+      </div>
+      <div class="primary">
+        <a href="#"><img src='../png/instagram.png'>關注我們</a>
       </div>
     </div>
-    
-<!-- 第三part -->
-<div class="vision-section">
-  <div class="swiper-container2">
-    <div class="swiper-wrapper">
-      
-      <div class="swiper-slide">
-      <div class="swiper-slide-png01">
-        <div class="slide-content">
-          <h1 class="white-font big-size">01</h1>
-          <h1 class="white-font">隨時隨地<br>隨即隨拍</h1>
-          <div class="divide small-margin"></div>
-          <p class="white-font">還在擔心人生高光沒被記錄到?</p>
+    <div class="app-introduce">
+      <img src="../png/app.png" alt="">
+    </div>
+  </div>
+
+  <!-- 流程介紹 -->
+  <div class="vision-section">
+    <div class="swiper-container2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide ">
+          <div class="swiper-slide-png01">
+            <div class="slide-content slide1">
+                <h1 class="white-font big-size">01</h1>
+                <h1 class="white-font">隨時隨地<br>隨即隨拍</h1>
+              <div class="divide small-margin"></div>
+              <p class="white-font">還在擔心人生高光沒被記錄到?</p>
+            </div>
+          </div>
         </div>
-      </div>
-     </div>
-      <div class="swiper-slide">
-        <div class="swiper-slide-png02">
-          <div class="slide-content">
-            <h1 class="white-font big-size">02</h1>
-            <h1 class="white-font">官方認證攝影師</h1>
-            <div class="divide small-margin"></div>
-             <p class="white-font">我不知道他攝影專不專業欸?</p>
+        <div class="swiper-slide">
+          <div class="swiper-slide-png02">
+            <div class="slide-content slide2">
+              <h1 class="white-font big-size">02</h1>
+              <h1 class="white-font">官方認證攝影師</h1>
+              <div class="divide small-margin"></div>
+              <p class="white-font">我不知道他攝影專不專業欸?</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-png03">
+            <div class="slide-content slide3">
+              <h1 class="white-font big-size">03</h1>
+              <h1 class="white-font">更平價<br>更專業</h1>
+              <div class="divide small-margin"></div>
+              <p class="white-font">為什麼市場上的攝影師報價都要這麼貴!</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-png04">
+            <div class="slide-content slide4">
+              <h1 class="white-font big-size">04</h1>
+              <h1 class="white-font text-middle">評價機制<br>拍攝不踩雷</h1>
+              <div class="divide small-margin"></div>
+              <p class="white-font">看不到他過往的接案狀況，我怎麼知道他雷不雷!</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="swiper-slide-png03">
-           <div class="slide-content">
-            <h1 class="white-font big-size">03</h1>
-             <h1 class="white-font">更平價<br>更專業</h1>
-             <div class="divide small-margin"></div>
-              <p class="white-font">為什麼市場上的攝影師報價都要這麼貴!</p>
-           </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-slide-png04">
-         <div class="slide-content">
-          <h1 class="white-font big-size">04</h1>
-            <h1 class="white-font text-middle">評價機制<br>拍攝不踩雷</h1>
-            <div class="divide small-margin"></div>
-            <p class="white-font">看不到他過往的接案狀況，我怎麼知道他雷不雷!</p>
-        </div>
-        </div>
-      </div>
+      <!-- 如果需要導航按鈕 -->
+      <div class="swiper-button-next2"></div>
+      <div class="swiper-button-prev2"></div>
+      <!-- 分頁 -->
+      <!-- <div class="swiper-pagination"></div> -->
     </div>
-     <!-- 如果需要導航按鈕 -->
-    <div class="swiper-button-next2"></div>
-    <div class="swiper-button-prev2"></div>
-    <!-- 分頁 -->
-    <!-- <div class="swiper-pagination"></div> -->
   </div>
-</div>
-  <div class="grid-1200 colume margin-d">
-      <h2>【  近期活動  】</h2>
+  <!-- 近期活動 -->
+  <div class="recent_event">
+    <div class="grid-1200  margin-d" data-aos="fade-left">
+      <h2>【 近期活動 】</h2>
       <h3>Latest activity</h3>
-  </div>
-<div class="grid-1200 margin-c">
-    <div class="box">
-      <a href="#">
-      <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/mvp.png?raw=true" alt="">
-      </a>
-       <h1 class="font-date col-12">CAMPAIGN/2022.11.20</h1>
-       <h3 class="font-black">【MVP測試】如何拿著兩個看板就去攝影邀約?</h3>
-       <p class="article">MVP（Minimum Viable Product）是指最小可行性產品，是一個產品開發過程中的初步版本。MVP的目標是在最短的時間內推出一個基本的產品，以最小的功能集合來驗證產品的可行性，以確定是否繼續開發。MVP的定義可以根據不同的產品、市場和客戶需求而有所不同，但在一般情況下，MVP至少應包含最基本的功能和價值主張。其次，MVP應該集中於解決核心問題，而不是添加冗餘或不必要的功能。最後，MVP可以作為一個實驗，用於測試產品假設和收集反饋。透過MVP，團隊可以快速測試和迭代，以確定最終產品的最佳方向和設計。因此，MVP是一個非常重要的產品開發策略，可以幫助企業節省時間和成本，並更好地理解市場和客戶需求。</p>
     </div>
-    <div class="box">
-       <a href="#" >
-      <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/interview.png?raw=true" alt="">
-       </a>
-      <h1 class="font-date col-12">CAMPAIGN/2023.01.28</h1>
-      <h3 class="font-black">【使用者脈絡訪談】開箱cosplayer咪醬如何與攝影師互動!</h3>
-      <p class="article">使用者訪談是一種重要的研究方法，可用於了解目標用戶的需求、想法和體驗。透過使用者訪談，設計師和產品經理可以更好地了解用戶的痛點，並進一步改進產品或服務的設計和功能。此外，使用者訪談還可以幫助確定用戶的期望和偏好，以及了解他們對產品或服務的態度和感受。這些洞察力可以幫助企業做出更明智的決策，以提高客戶滿意度，增加銷售量和市佔率。值得注意的是，使用者訪談需要經過嚴謹的規劃和執行，以確保獲得可靠和有意義的結果。因此，在進行使用者訪談時，設計師和研究人員應該仔細考慮問題的設計和訪談的方式，以確保獲得真實和實用的洞察力</p>
-    </div>
-    <div class="box">
-       <a href="#">
-       <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/Usability%20test.png?raw=true" alt="">
-       </a>
+    <div class="grid-1200 margin-c">
+      <div class="box">
+        <a href="#">
+          <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/mvp.png?raw=true" alt="">
+        </a>
+        <h1 class="font-date col-12">CAMPAIGN/2022.11.20</h1>
+        <h3 class="font-black">【MVP測試】如何拿著兩個看板就去攝影邀約?</h3>
+        <p class="article">MVP（Minimum Viable
+          Product）是指最小可行性產品，是一個產品開發過程中的初步版本。MVP的目標是在最短的時間內推出一個基本的產品，以最小的功能集合來驗證產品的可行性，以確定是否繼續開發。MVP的定義可以根據不同的產品、市場和客戶需求而有所不同，但在一般情況下，MVP至少應包含最基本的功能和價值主張。其次，MVP應該集中於解決核心問題，而不是添加冗餘或不必要的功能。最後，MVP可以作為一個實驗，用於測試產品假設和收集反饋。透過MVP，團隊可以快速測試和迭代，以確定最終產品的最佳方向和設計。因此，MVP是一個非常重要的產品開發策略，可以幫助企業節省時間和成本，並更好地理解市場和客戶需求。
+        </p>
+      </div>
+      <div class="box">
+        <a href="#">
+          <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/interview.png?raw=true" alt="">
+        </a>
+        <h1 class="font-date col-12">CAMPAIGN/2023.01.28</h1>
+        <h3 class="font-black">【使用者脈絡訪談】開箱cosplayer咪醬如何與攝影師互動!</h3>
+        <p class="article">
+          使用者訪談是一種重要的研究方法，可用於了解目標用戶的需求、想法和體驗。透過使用者訪談，設計師和產品經理可以更好地了解用戶的痛點，並進一步改進產品或服務的設計和功能。此外，使用者訪談還可以幫助確定用戶的期望和偏好，以及了解他們對產品或服務的態度和感受。這些洞察力可以幫助企業做出更明智的決策，以提高客戶滿意度，增加銷售量和市佔率。值得注意的是，使用者訪談需要經過嚴謹的規劃和執行，以確保獲得可靠和有意義的結果。因此，在進行使用者訪談時，設計師和研究人員應該仔細考慮問題的設計和訪談的方式，以確保獲得真實和實用的洞察力
+        </p>
+      </div>
+      <div class="box">
+        <a href="#">
+          <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/Usability%20test.png?raw=true" alt="">
+        </a>
         <h1 class="font-date col-12">CAMPAIGN/2023.03.01</h1>
         <h3 class="font-black">【易用性測試】HI!初次見面!請問你有攝影的背景嗎?</h3>
-        <p class="article">易用性測試是一種用戶體驗研究方法，旨在評估產品、服務或網站的易用性和可用性。易用性測試的好處在於它可以幫助企業發現和修復產品中的問題，改善用戶體驗，從而提高客戶滿意度和忠誠度。以下是易用性測試的好處：
+        <p class="article">
+          易用性測試是一種用戶體驗研究方法，旨在評估產品、服務或網站的易用性和可用性。易用性測試的好處在於它可以幫助企業發現和修復產品中的問題，改善用戶體驗，從而提高客戶滿意度和忠誠度。以下是易用性測試的好處：
           提高產品的易用性：易用性測試可以發現產品中的問題，從而幫助企業改善用戶體驗，提高產品的易用性和可用性。
           減少開發成本和時間：透過早期的易用性測試，可以減少後期修復問題的成本和時間。
           提高客戶滿意度和忠誠度：透過易用性測試發現和解決問題，可以提高客戶滿意度和忠誠度，進而提高銷售和市佔率。
           提高產品的競爭力：易用性測試可以幫助企業改善產品的設計和功能，從而提高產品的競爭力和市場地位。</p>
+      </div>
     </div>
-</div>
-<div class="container footer margin-a">
-  <div class="box-middle">
-     <a href="https://instagram.com/pikmi.tw?igshid=NTc4MTIwNjQ2YQ==">
-         <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/IG.png?raw=true" alt="">
-     </a>
-       <h3>COPYRIGHT IN 2023.PIKMI COMPANY</h3>
+
   </div>
-</div>
+  <div class="about_us">
+    <div class="about_us_pic">
+      <img src="../png/about_us.png" data-aos="fade-up-right">
+    </div>
+    <div class="about_us_text" data-aos="fade-left">
+      <h1>關於我們</h1>
+      <div class="divide small-margin"></div>
+      <p>我們的團隊由一群專業的攝影師和設計人員所組成，致力於為客戶捕捉最美好的瞬間。我們注重細節，追求完美，讓每一個拍攝過程都充滿著愉悅和輕鬆的氛圍。</p>
+      <a class="about_more" href="#">
+        了解更多
+      </a>
+    </div>
+  </div>
+  <div class=" footer ">
+    <div class="box-middle">
+      <div class="footer_icon">
+        <a href="https://instagram.com/pikmi.tw?igshid=NTc4MTIwNjQ2YQ==">
+          <img src="https://github.com/Raymond870307/Pikmi/blob/master/png/IG.png?raw=true" alt="">
+        </a>
+        <a href="https://instagram.com/pikmi.tw?igshid=NTc4MTIwNjQ2YQ==">
+          <img src="../png/google.png" alt="">
+        </a>
+      </div>
+      <div class="footer_company">
+        <p>COPYRIGHT IN 2023.PIKMI COMPANY</p>
+      </div>
+
+    </div>
+  </div>
   <!-- 第二部分swiper -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  
+
   <script>
     var swiper = new Swiper('.swiper-container2', {
       loop: true,
       effect: 'slide',
       autoplay: {
-          delay: 3600,
-        },
+        delay: 3600,
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
       navigation: {
-          nextEl: '.swiper-button-next2',
-          prevEl: '.swiper-button-prev',
-        },
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev',
+      },
     });
   </script>
-  
+
   <!-- 第一部分swiper -->
-      <!-- 引入 Swiper JS 文件 -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script>
-        var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        autoplay: {
-          delay: 1200,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-        },
-        loop: true // 加入 loop 選項
-      });
-      
-      </script>
-      <script>
-                // JavaScript 程式碼
-      const hamburger = document.querySelector('.hamburger');
-      const menu = document.querySelector('.menu');
-      
-      hamburger.addEventListener('click', () => {
-        menu.classList.toggle('active');
-      });
-      
-      </script>
+  <!-- 引入 Swiper JS 文件 -->
+
+
+  <script>
+    // JavaScript 程式碼
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+  </script>
+
 </body>
+
 </html>
