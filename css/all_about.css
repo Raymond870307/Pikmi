@@ -1,0 +1,462 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: 'Noto Sans TC';
+
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* //rwd img css 可當作式css reset其中一種// */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* //全域border box// */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* bg底圖 */
+.bg-png001 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(https://github.com/Raymond870307/Pikmi/blob/master/png/LOGO-BG01.png?raw=true);
+	width: 100%;
+	height: 116px;
+	position: absolute;
+	top:40%;
+	z-index: 999;
+
+}
+
+.bg_1 {
+	width: 100%;
+	height: 50%;
+	background-repeat: no-repeat;
+	background-position: center ;
+	position: absolute;
+	background-image: url(https://github.com/Raymond870307/Pikmi/blob/master/png/LOGO-BG01.png?raw=true);
+	z-index: 999;
+}
+
+.bg_1 img {
+	opacity: 0.8;
+	width: auto;
+	height: auto;
+}
+
+.bg-png001 img {
+	opacity: 0.8;
+	width: 300%;
+	height: auto;
+}
+
+.navbar {
+	width: 100%;
+	height: 10%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.473);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+	height: 40px;
+}
+
+.menu {
+	display: flex;
+	gap: 20px;
+}
+
+.menu-item {
+	padding: 10px;
+	text-decoration: none;
+	color: #000000;
+	transition: background-color 0.3s, color 0.3s;
+	border-radius: 6px;
+
+
+}
+
+.menu-item_btn {
+	padding: 10px;
+	text-decoration: none;
+	color: #000000;
+	transition: background-color 0.3s, color 0.3s;
+	border-radius: 6px;
+	width: 200px;
+	text-align: center;
+	background-color: #6B76FF;
+	color: #fff;
+
+}
+
+.menu-item_btn:hover {
+	background-color: #325DE0;
+}
+
+.menu-item:hover {
+	background-color: #ffc107;
+	color: #ffffff;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger-line {
+	width: 25px;
+	height: 3px;
+	background-color: #000000;
+	margin-bottom: 5px;
+}
+/* part2斷點設定 */
+
+h1 {
+	font-size: 60px;
+	font-weight: 900;
+	/* border: red solid 1px; */
+	color: #424242;
+	line-height: 1.2em;
+	;
+}
+
+h2 {
+	line-height: 1.8em;
+	/* border: red solid 1px; */
+	font-size: 36px;
+	color: black;
+}
+
+h3 {
+	line-height: 1.8em;
+	/* border: red solid 1px; */
+	font-size: 18px;
+	color: #858585;
+}
+
+p {
+	color: gray;
+	line-height: 1.2em;
+}
+
+
+
+
+/* 關於我們 */
+.about {
+	height: 150vh;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about_photo {
+	width: 50%;
+	height: 50%;
+	background-image: url("../png/BG.png");
+	background-size: cover;
+	background-position: center;
+	margin-top: 25vh;
+	border-radius: 20px;
+}
+
+.about_contain {
+	overflow-wrap: break-word;
+	width: 50%;
+	height: 50%;
+	margin: 60px;
+	text-align: center;
+}
+.about_contain h1{
+	margin-bottom: 30px;
+}
+
+
+.about_contain p{
+	overflow-wrap: break-word;
+	line-height: 35px;
+	text-align: left;
+	font-size: 22px;
+}
+
+
+
+/* nav斷點設定 */
+@media screen and (max-width: 900px) {
+	.navbar {
+		position: relative;
+		/* 將 position 設回 relative */
+		height: 10vh;
+	}
+
+	.menu {
+		display: none;
+		transition: transform 2s ease;
+		background-color: #ffffff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		box-sizing: border-box;
+		opacity: 0;
+		pointer-events: none;
+		background-color: rgba(107, 118, 255, 0.8);
+		width: 100%;
+		height: 100%;
+		padding: 50px;
+		gap: 36px;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		/* 將 position 設為 fixed */
+		top: 0;
+		left: 0;
+		z-index: 1;
+		/* 設定較高的 z-index，讓 menu 在最上層 */
+	}
+
+	.menu.active {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		opacity: 1;
+		pointer-events: auto;
+		transform: translateY(0);
+		width: 100vw;
+		/* 設定寬度為 100vw */
+		height: 100vh;
+		/* 設定高度為 100vh */
+	}
+
+	.logo {
+		position: fixed;
+		/* 將 position 設為 fixed */
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		/* 將 logo 水平置中 */
+		z-index: 9999;
+		/* 設定較高的 z-index，讓 logo 在 menu 上方 */
+	}
+
+	.menu-item {
+		text-decoration: none;
+		color: #000000;
+		transition: background-color 0.3s, color 0.3s;
+	}
+
+	.menu-item:hover {
+		background-color: #ffc107;
+		color: #ffffff;
+	}
+
+	.hamburger {
+		display: block;
+		cursor: pointer;
+		position: relative;
+		z-index: 999;
+	}
+
+	.hamburger-line {
+		width: 25px;
+		height: 3px;
+		background-color: #000000;
+		margin-bottom: 5px;
+		transition: transform 0.3s ease;
+	}
+
+	.hamburger.active .hamburger-line:nth-child(1) {
+		transform: rotate(-45deg) translate(-4px, 5px);
+	}
+
+	.hamburger.active .hamburger-line:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger.active .hamburger-line:nth-child(3) {
+		transform: rotate(45deg) translate(-4px, -5px);
+	}
+	.about {
+		height: 200vh;
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.about_photo {
+		width: 80%;
+		height: 50%;
+		background-image: url("../png/BG.png");
+		background-size: cover;
+		background-position: center;
+		border-radius: 20px;
+	}
+	
+	.about_contain {
+		overflow-wrap: break-word;
+		width: 50%;
+		height: 50%;
+		margin: 60px;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	.about_contain h1{
+		margin-bottom: 30px;
+	}
+	
+	
+	.about_contain p{
+		overflow-wrap: break-word;
+		line-height: 35px;
+		text-align: left;
+		font-size: 22px;
+	}
+}
